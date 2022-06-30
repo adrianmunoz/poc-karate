@@ -1,18 +1,16 @@
 Feature: Casos de prueba de la funcionalidad de karate sobre https
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
-
     * configure ssl = true
 
   Scenario: consulta un servicio rest. get. chequea http status = 200.
-    Given url 'http://localhost:4000/api/karate/caso1'
+    Given url 'http://poc-karate-backend.herokuapp.com/api/karate/caso1'
     When method GET
     Then status 200
 
 
   Scenario: consulta un servicio rest. get. chequea http status = 200 y respuesta ok.
-    Given url 'http://localhost:4000/api/karate/caso1'
+    Given url 'http://poc-karate-backend.herokuapp.com/api/karate/caso1'
     When method GET
     Then status 200
 
