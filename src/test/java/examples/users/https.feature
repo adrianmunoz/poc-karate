@@ -16,7 +16,7 @@ Feature: Casos de prueba de la funcionalidad de karate sobre https
 
     When method get
     Then status 200
-    And match response contains {"ok":true}
+    And match response contains {"ok1":true}
 
 #  Scenario: create a user and then get it by id
 #    * def user =
